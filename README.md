@@ -146,7 +146,12 @@ A breadboard typically consists of the following sections
   - 2 Batteries of 1.5V
 
 - **Circuit Assembly**
-  - Connect the data pin of the DHT11 to GPIO 4 of the ESP32, power to 3.3V, and GND.
+
+<br>
+
+<div align="center"><img src="img/pushbuttomschema-w957-h658.png" width=957 height=658><br><sub> Circuit Schema - (<a href='https://github.com/vitorstabile'>Work by Vitor Garcia</a>) </sub></div>
+
+<br>
 
 #### <a name="chapter4part1"></a>Chapter 4 - Part 2: Blink an LED with the ESP32-S3
 
