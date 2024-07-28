@@ -13,9 +13,10 @@
 3. [Chapter 3: Setting Up the Development Environment](#chapter3)
     - [Chapter 3 - Part 1: Necessary Software](#chapter3part1)
     - [Chapter 3 - Part 2: Setup Steps](#chapter3part2)
-4. [Chapter 4: First Projects with the ESP32](#chapter4)
-    - [Chapter 4 - Part 1: Blink an LED](#chapter4part1)
-    - [Chapter 4 - Part 2: Temperature Sensor with DHT11](#chapter4part2)
+4. [Chapter 4: First Projects with the ESP32-S3](#chapter4)
+    - [Chapter 4 - Part 1: Building a Simple LED Circuit Controlled by a Push Button](#chapter4part1)
+    - [Chapter 4 - Part 2: Blink an LED with the ESP32-S3](#chapter4part2)
+    - [Chapter 4 - Part 3: Temperature Sensor with DHT11 in the ESP32-S3](#chapter4part3)
 
 
 ## <a name="chapter1"></a>Chapter 1: Introduction to Basic Electronics
@@ -102,9 +103,52 @@
 
   - Go to Tools > Board > Boards Manager, search for esp32 and install the package.
 
-## <a name="chapter4"></a>Chapter 4: First Projects with the ESP32
+## <a name="chapter4"></a>Chapter 4: First Projects with the ESP32-S3
 
-#### <a name="chapter4part1"></a>Chapter 4 - Part 1: Blink an LED
+#### <a name="chapter4part1"></a>Chapter 4 - Part 1: Building a Simple LED Circuit Controlled by a Push Button
+
+- **The wires Convention**
+
+In the world of DC electronics, the accepted wiring convention is that the red wire carries the positive voltage, and the black is circuit ground. 
+
+Usually the red is marked as + (plus) and the black is marked as – (minus).
+
+- **Current Flow**
+
+Electric current is defined to flow from positive to negative.
+
+Electrons flow from negative to positive because they are negatively charged and are attracted to the positive charge
+
+In Eletronic, the flow is from postive (red wire) to negative (black/blue wire)
+
+- **How to use a Breadboard**
+
+A breadboard typically consists of the following sections
+
+- **Terminal Strips (Rows)**: The main area where components are inserted. Each row is connected internally.
+
+- **Bus Strips (Power Rails**): Usually along the sides, marked with red (positive) and blue/black (negative) lines. These are used to provide power and ground connections throughout the board.
+
+<br>
+
+<div align="center"><img src="img/breadboardrowconnections-w300-h469.png" width=300 height=469><br><sub> Breadboard - (<a href='https://www.sciencebuddies.org/science-fair-projects/references/how-to-use-a-breadboard'>Work by Ben Finio, Science Buddies / Science Buddies</a>) </sub></div>
+
+<br>
+
+
+
+- **Necessary Components**
+  - Breadboard
+  - LED
+  - Push Button
+  - 10kΩ resistor
+  - Jumpers
+  - 2 Batteries of 1.5V
+
+- **Circuit Assembly**
+  - Connect the data pin of the DHT11 to GPIO 4 of the ESP32, power to 3.3V, and GND.
+
+#### <a name="chapter4part1"></a>Chapter 4 - Part 2: Blink an LED with the ESP32-S3
 
 - **Necessary Components**
   - 220Ω resistor
@@ -135,7 +179,7 @@ void loop() {
   - Select the correct board and port in Tools > Board and Tools > Port.
   - Click the upload button (right arrow).
 
-#### <a name="chapter4part2"></a>Chapter 4 - Part 2: Temperature Sensor with DHT11
+#### <a name="chapter4part2"></a>Chapter 4 - Part 3: Temperature Sensor with DHT11 in the ESP32-S3
 
 - **Necessary Components**
   - 220Ω resistor
