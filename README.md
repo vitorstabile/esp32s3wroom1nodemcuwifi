@@ -72,7 +72,7 @@
 
 #### <a name="chapter2part2"></a>Chapter 2 - Part 2: ESP32-S3 Wroom Developmentboard Specification
 
-[ESP32-S3 NodeMCU Developmentboard Specification]()
+[ESP32-S3 NodeMCU Developmentboard Specification](https://github.com/vitorstabile/esp32s3wroom1nodemcuwifi/blob/main/img/ESP-32-S3_NodeMCU_Developmentboard_Specification.pdf)
 
 #### <a name="chapter2part3"></a>Chapter 2 - Part 3: ESP32-S3 Wroom Developmentboard Pinout
 
